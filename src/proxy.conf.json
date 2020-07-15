@@ -1,0 +1,17 @@
+{
+  "/kc": {
+    "target": "http://localhost:8080",
+    "secure": false,
+    "pathRewrite": {
+      "^/kc": "",
+      "^/kc/auth": "/auth"
+    }
+  },
+  "/auth": {
+    "target": "http://localhost:8080",
+    "secure": false,
+    "pathRewrite": {
+      "^/auth": "/auth"
+    }
+  }
+}
