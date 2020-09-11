@@ -47,7 +47,7 @@ function initializer(keycloak: KeycloakService): () => Promise<any> {
     {
       config: environment.keycloak,
       initOptions: {
-        onLoad: 'check-sso',
+        onLoad: 'login-required',
         checkLoginIframe: false
       },
       loadUserProfileAtStartUp: false,
@@ -60,7 +60,7 @@ function initializer(keycloak: KeycloakService): () => Promise<any> {
 
 // export class AppModule implements DoBootstrap {
 //   debugger
-//   ngDoBootstrap(appRef: ApplicationRef) {    
+//   ngDoBootstrap(appRef: ApplicationRef) {
 //     keycloakService
 //       .init({
 //           config: environment.keycloak,
@@ -72,7 +72,7 @@ function initializer(keycloak: KeycloakService): () => Promise<any> {
 //           bearerExcludedUrls: []
 //         })
 //       .then(() => {
-//         console.log('[ngDoBootstrap] bootstrap app'); 
+//         console.log('[ngDoBootstrap] bootstrap app');
 //         appRef.bootstrap(AppComponent);
 //       })
 //       .catch((error) =>

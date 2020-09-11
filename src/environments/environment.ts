@@ -2,16 +2,25 @@
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+// export const environment = {
+//   production: false,
+//   validRoles: ['precview'],
+//   keycloak: {
+//     url: 'http://localhost:4200/kc/auth',
+//     realm: 'precview',
+//     clientId: 'precview',
+//     credentials: {
+//       secret: '2dc0db61-08ac-49cb-a50f-04aef236e706'
+//     }
+//   }
+// };
 export const environment = {
   production: false,
-  validRoles: ['teste'],
+  validRoles: ['test'],
   keycloak: {
-    url: 'http://localhost:4200/kc/auth',
-    realm: 'teste',
-    clientId: 'teste',
-    credentials: {
-      secret: '74f372c0-6a65-45a0-bc3a-87a4fcfb47df'
-    }
+    url: 'http://localhost:8080/kc/auth',
+    realm: 'universe',
+    clientId: 'docking_bay_shuttle',
   }
 };
 

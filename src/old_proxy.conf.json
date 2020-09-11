@@ -1,17 +1,15 @@
 {
-  "/kc/*": {
+  "/kc": {
     "target": "https://auth.dev.inov.ai",
     "secure": false,
-    "changeOrigin": true,
     "pathRewrite": {
       "^/kc": "",
       "^/kc/auth": "/auth"
     }
   },
-  "/auth/*": {
+  "/auth": {
     "target": "https://auth.dev.inov.ai",
     "secure": false,
-    "changeOrigin": true,
     "pathRewrite": {
       "^/auth": "/auth"
     }
